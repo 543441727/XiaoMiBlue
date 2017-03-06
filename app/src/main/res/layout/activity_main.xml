@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+    tools:context="com.qianmo.xiaomiblue.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        />
+
+    <com.qianmo.xiaomiblue.view.BlurredView
+        android:id="@+id/blurredView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:disableBlurred="false"
+        app:src="@raw/pic"
+        />
+
+</LinearLayout>
